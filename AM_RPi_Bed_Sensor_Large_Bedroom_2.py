@@ -20,7 +20,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(pin_sck, GPIO.OUT)
 
 # set input parameters
-debug_mode = True
+debug_mode = False
 value_kg = 20400
 send_trigger_for_kg_min = 10
 send_trigger_for_kg_max = 200
@@ -82,8 +82,6 @@ def monitor_bed_sensor():
     logger.info('start monitoring bed sensor')
     # setup
     value_current = read_bed_sensor_value()[0]
-    if debug_mode:
-        logger.info('current value: {0}'.format(value_current))
     stable_value_current = 0
     stable_value_previous = 0
     stable_values_list = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -176,13 +174,12 @@ def monitor_bed_sensor():
 
 
 # send alive message to server
-# thread_send_alive_message = threading.Thread(target=send_alive_message)
-# thread_send_alive_message.setDaemon = True
-# thread_send_alive_message.start()
+thread_send_alive_message = threading.Thread(target=send_alive_message)
+thread_send_alive_message.setDaemon = True
+thread_send_alive_message.start()
 
 
 # monitor bed sensor
-# thread_monitor_bed_sensor = threading.Thread(target=monitor_bed_sensor)
-# thread_monitor_bed_sensor.setDaemon = True
-# thread_monitor_bed_sensor.start()
-monitor_bed_sensor()
+thread_monitor_bed_sensor = threading.Thread(target=monitor_bed_sensor)
+thread_monitor_bed_sensor.setDaemon = True
+thread_monitor_bed_sensor.start()
