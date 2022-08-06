@@ -173,12 +173,13 @@ def monitor_bed_sensor():
 
 
 # send alive message to server
-thread_send_alive_message = threading.Thread(target=send_alive_message)
-thread_send_alive_message.setDaemon = True
-thread_send_alive_message.start()
+# thread_send_alive_message = threading.Thread(target=send_alive_message)
+# thread_send_alive_message.setDaemon = True
+# thread_send_alive_message.start()
 
 
 # monitor bed sensor
-thread_monitor_bed_sensor = threading.Thread(target=monitor_bed_sensor)
-thread_monitor_bed_sensor.setDaemon = True
-thread_monitor_bed_sensor.start()
+# thread_monitor_bed_sensor = threading.Thread(target=monitor_bed_sensor)
+# thread_monitor_bed_sensor.setDaemon = True
+# thread_monitor_bed_sensor.start()
+monitor_bed_sensor()
