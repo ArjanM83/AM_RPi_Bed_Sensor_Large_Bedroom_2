@@ -85,7 +85,7 @@ def create_and_enable_service(service_name, executable_file):
 
 
 def show_end_notes():
-    print "\n\nSetup is now complete! Please reboot the system and the door sensor script will start automatically."
+    print "\n\nSetup is now complete! Please reboot the system and the bed sensor script will start automatically."
 
 
 # check if script is running with root level permissions ###############################################################
