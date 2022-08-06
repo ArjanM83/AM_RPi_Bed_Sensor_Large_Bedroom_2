@@ -96,7 +96,7 @@ if script_is_root():
     print "Root level permissions: OK!"
 else:
     print "Root level permissions: Failed!"
-    print "Setup aborted! Please restart script using: sudo python2 setup.py\n"
+    print "Setup aborted! Please restart script using: sudo python setup.py\n"
     sys.exit()
 
 

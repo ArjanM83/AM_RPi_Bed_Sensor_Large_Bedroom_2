@@ -26,7 +26,7 @@ send_trigger_for_kg_min = 10
 send_trigger_for_kg_max = 200
 reset_total_weight_count_after_x_seconds = 1800
 reset_cumulative_weight_kg = 10
-bed_sensor_name = "bed sensor large bedroom 1"
+bed_sensor_name = "bed sensor large bedroom 2"
 total_weight_log_object_name = "{0} {1}".format(bed_sensor_name, "Weight")
 
 
