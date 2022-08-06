@@ -1,0 +1,1 @@
+git clone https://AMServiceAccountRPiBedSensor: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@github.com/ArjanM83/AM_RPi_Bed_Sensor_Large_Bedroom_1.git
