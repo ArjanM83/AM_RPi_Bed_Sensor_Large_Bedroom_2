@@ -6,7 +6,7 @@ import sys
 # parameters ###########################################################################################################
 
 
-CURRENT_CWD = "AM_RPi_Bed_Sensor_Large_Bedroom_1"
+CURRENT_CWD = "AM_RPi_Bed_Sensor_Large_Bedroom_2"
 TIMEZONE = "Europe/Amsterdam"
 SAMBA_FILE_SHARE_PASSWORD = "raspberry"
 
@@ -164,8 +164,8 @@ if corrent_timezone == "y":
 
 
 create_and_enable_service(
-    "am_rpi_bed_sensor_large_bedroom_1",
-    "/home/pi/AM_RPi_Bed_Sensor_Large_Bedroom_1/run_AM_RPi_Bed_Sensor_Large_Bedroom_1_redirect_stderr.sh")
+    "am_rpi_bed_sensor_large_bedroom_2",
+    "/home/pi/AM_RPi_Bed_Sensor_Large_Bedroom_2/run_AM_RPi_Bed_Sensor_Large_Bedroom_2_redirect_stderr.sh")
 
 
 # create samba file share ##############################################################################################
