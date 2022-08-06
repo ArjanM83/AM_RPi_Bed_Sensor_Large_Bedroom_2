@@ -20,7 +20,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(pin_sck, GPIO.OUT)
 
 # set input parameters
-debug_mode = False
+debug_mode = True
 value_kg = 20400
 send_trigger_for_kg_min = 10
 send_trigger_for_kg_max = 200
