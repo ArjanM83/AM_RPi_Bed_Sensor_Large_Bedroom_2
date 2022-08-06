@@ -79,6 +79,7 @@ def read_bed_sensor_value():
 
 
 def monitor_bed_sensor():
+    logger.info('start monitoring bed sensor')
     # setup
     value_current = read_bed_sensor_value()[0]
     if debug_mode:
